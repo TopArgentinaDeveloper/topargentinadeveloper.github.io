@@ -80,6 +80,9 @@
 .activo {
     background: rgb(28, 175, 175);
 }
+#btnpreguntas {
+    width: 210px;
+}
 //SLOGAN//
 #slogan {
     max-height: 200px;
@@ -89,6 +92,7 @@
     left: 20px;
     font-size: 48px;
     color: $verdeintenso;
+    text-shadow: 3px 3px black;
 }
 //Texto de inicio acerca del Dr. Abodiyat//
 .negrita {
@@ -96,7 +100,7 @@
     left: 20px;
     top: 20px;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 28px;
     color: white;
 }
 //Textos del call to action//
@@ -214,12 +218,17 @@
     transform: scale(0.9);
     }
 //PAGINA SOBRE MI
-.contenedorSobreMi {
-    width: 100%;
-    flex-direction: row;
+.sobreMi {
     justify-content: center;
+    margin: 5px;
+}
+.contenedorgotas {
+    flex-direction: row;
     align-items: center;
-    text-align: center; 
+    text-align: center;
+    @media (max-width: 800px) {
+        margin: 15px;    
+    }
 }
 
 .textoSobreMi {
@@ -228,6 +237,9 @@
     text-align: center;
     font-size: 20px;
     font-family: Arial, Verdana, sans-serif;
+    @media (max-width: 800px) {
+        margin: 15px;    
+    }
 }
 //ARTÍCULOS
 #artsDeInteres {
@@ -241,7 +253,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 15px;
 }
 .tituloArticulo {
     color: $oscuro;
@@ -257,12 +268,13 @@
 //Texto de la página contacto
 .textoContacto {
     color: $verdeprimario;
+    text-shadow: 3px 3px black; 
     width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: width 2s; 
+    transition: width 2s;
 }
 .textoContacto:hover {
     background-color: aqua;
